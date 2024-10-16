@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+  @apply mx-auto py-6 sm:py-8 md:py-[130px] px-4 sm:px-6 md:px-[160px];
+}
+
+.section-heading {
+  @apply text-heading font-bold mb-[40px] md:text-heading-desktop md:mb-[90px];
+}
+
+/* call to action button */
+.cta {
+  @apply bg-white text-accent py-[10px] px-[20px] self-start rounded-md transition duration-300 text-[14px];
+}
+
+/*footer*/
+.footer-heading {
+  @apply font-bold mb-3 text-list-heading;
+}
+
+.footer-item {
+  @apply text-list-item mb-4 cursor-pointer;
+}
+
+.noticebox::-webkit-scrollbar {
+  @apply rounded-3xl bg-white;
+}
+
+.noticebox::-webkit-scrollbar-thumb {
+  @apply bg-primary rounded-3xl;
+}
+
+/*slider styling*/
+/* Custom style for Swiper bullets */
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: white !important; /* Default bullet color */
+  opacity: 1 !important;
+  margin: 0 5px; /* Space between bullets */
+  transition: all 0.3s ease; /* Smooth transition */
+  border-radius: 50%; /* Make them round */
+}
+
+/* Wider active bullet */
+.swiper-pagination-bullet-active {
+  width: 30px !important; /* Make the active bullet wider */
+  height: 10px !important; /* Same height, wider width */
+  background-color: white !important; /* Custom color for the active bullet */
+  opacity: 1 !important;
+  border-radius: 25px !important;
+}
+
+.swiper-pagination {
+  left: -280px !important;
+}
